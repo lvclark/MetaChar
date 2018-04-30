@@ -24,10 +24,8 @@ zip file of the Windows binary from the latest release on the
 Unzip it.  Make a desktop shortcut to the file "metachar.exe".  Double-click that
 shortcut to launch the program.
 
-On Android, you'll need an app called Kivy Launcher.  On your SD card, in a folder
-called Kivy, add a new folder called MetaChar, and then add the files from this 
-repository ("main.py", "metachar.kv", and "android.txt") to that folder.  Now you
-should be able to access MetaChar from Kivy Launcher.
+Hypothetically it should work on Android with the Kivy Launcher app, but currently
+it simply crashes the app.
 
 ## License
 
