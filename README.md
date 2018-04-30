@@ -16,7 +16,8 @@ sums of other stats, and/or from numbers that only pertain to that particular su
 ## Installing
 
 If coding is your thing, you can run MetaChar from the source using Python 3.6 and
-Kivy 1.10.
+Kivy 1.10.  `main.py` and `metachar.kv` are the only files that you need in order
+to run the program from the source.
 
 For Windows users who don't want to bother installing Python/Kivy, download the
 zip file of the Windows binary from the latest release on the 
