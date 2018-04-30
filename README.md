@@ -28,3 +28,9 @@ On Android, you'll need an app called Kivy Launcher.  On your SD card, in a fold
 called Kivy, add a new folder called MetaChar, and then add the files from this 
 repository ("main.py", "metachar.kv", and "android.txt") to that folder.  Now you
 should be able to access MetaChar from Kivy Launcher.
+
+## License
+
+This software is released under the GNU General Public Licence v3.  In summary, you
+may use, modify, and distribute this software however you like, as long as it is 
+distributed under the same license.  This software comes with no warranty.
