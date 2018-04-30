@@ -12,6 +12,8 @@ is a button where you can add a popup with a lengthy description, which is handy
 for spells or for rules that you haven't memorized.  You also have the ability 
 to track how each stat was calculated.  Stats can be calculated as fractions or
 sums of other stats, and/or from numbers that only pertain to that particular sum.
+If you update the value of a stat, for example when leveling up your character,
+all stats derived from it are automatically updated.
 
 ## Installing
 
