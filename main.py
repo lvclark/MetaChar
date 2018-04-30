@@ -1384,16 +1384,28 @@ class MCpages(PageLayout):
         self.statspages = []
         
         # dummy stats for this example
-        self.statlist = [#DDAbilityBar(statname = "STR", statdesc = "Strength", statval = 13),
-                    #DDAbilityBar(statname = "DEX", statdesc = "Dexterity", statval = 10),
+        self.statlist = [StatBar(statname = "Examples", statdesc = "Here are some examples of what you can do."),
+            DDAbilityBar(statname = "STR", statdesc = "Strength", 
+                            statlist_new = [StatBarSimple(statname = "Level 1 base STR", 
+                                statdesc = "Number chosen at level 1", statval = 12),
+                                StatBarSimple(statname = "Dwarven STR bonus", 
+                                statdesc = "Bonus for being a mountain dwarf", statval = 2,
+                                showplus = True)], calcavail = True),
                     StatBarSimple(statname = "Prof. bonus", statdesc = "Proficiency bonus", statval = 2,
                                   showplus = True, calcavail = True)]
+        self.statlist[0].statbtn.size_hint_x = 1       
         self.statlist.append(StatBarSum(statname = "Athletics", statdesc = "stuff", showplus = True,
-                                statlist_existing = [self.statlist[0]],#, self.statlist[2]],
+                                statlist_existing = [self.statlist[1], self.statlist[2]],
                                 statlist_new = []))
-        self.statlist.append(StatBarCounter(statname = "Hit Points", statdesc = "You know", defaultval = 8, calcavail = True))
-        self.statlist.append(StatBarFraction(statname = "hp/2", statdesc = "", stat_to_div = self.statlist[2],
-                                             divisor = 2, rounddown = False))
+        self.statlist.append(StatBarCounter(statname = "Hit Points", 
+            statdesc = "You don't want to lose all of these.", defaultval = 8, calcavail = True))
+        self.statlist.append(StatBarText(statname = "Greataxe", 
+            statdesc = "Pretty sweet weapon.  Slashing, heavy, two-handed.",
+            stattext = "+3 to attack, 1d12+1 damage"))
+        self.statlist.append(StatBarThreeButtons(statname = "A spell",
+            statdesc = "The description of that spell.\n\nLine breaks okay.",
+            statname2 = "Another spell", statdesc2 = "The description of that other spell.",
+            statname3 = "Spell three", statdesc3 = "The description of the third spell."))
         masterstatlist.extend(self.statlist) # put them in master list too
         self.statspages.append(BoxOfStats(statlist = self.statlist))
         
