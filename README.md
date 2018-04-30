@@ -30,6 +30,6 @@ it simply crashes the app.
 
 ## License
 
-This software is released under the GNU General Public Licence v3.  In summary, you
+This software is released under the GNU General Public License v3.  In summary, you
 may use, modify, and distribute this software however you like, as long as it is 
 distributed under the same license.  This software comes with no warranty.
