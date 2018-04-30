@@ -1,0 +1,27 @@
+#:kivy 1.10.0
+
+<DescPopup>:
+    desc_lbl: desc_lbl
+    Label:
+        id: desc_lbl
+        text_size: self.width, None
+        size_hint: 1, 1
+        halign: "left"
+        valign: "middle"
+
+<BoxOfStats>:
+    canvas.before:
+        Color: 
+            rgba: self.red_bg,self.green_bg,self.blue_bg,1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            
+<FrontPage>:
+    canvas.before:
+        Color: 
+            rgba: 0.27,0,0.51,1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            
